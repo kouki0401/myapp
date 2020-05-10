@@ -1,0 +1,11 @@
+@import "bootstrap";
+
+/*ヘッダー・フッダーに重ならない*/
+body{
+    padding-top:4.5rem;   
+    padding-bottom:4.5rem;
+}
+/*予約ボタン*/
+.btn-outline-success{
+    margin-left: 20px;
+}

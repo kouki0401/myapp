@@ -1,0 +1,30 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <%= link_to image_tag("logo.png", alt: "KO logo", width: "30",height:"30"),
+                      "/",class:"d-inline-block align-top" %>
+        <%= link_to "KO-fitness",root_path,class:"navbar-brand" %>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <%= link_to "HOME",root_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "TRAINER",trainer_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "PRICE",price_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "STORE",store_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Q&A",help_path,class:"nav-link" %>
+            </li>
+            <%# 予約はボタンに後で変更！%>
+            <li class="nav-item">
+              <%= link_to "予約はこちら", reserve_path, class: "btn btn-outline-success" %>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>

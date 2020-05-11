@@ -1,5 +1,18 @@
 <% provide(:title,"Reservation") %>
-<h1>【ご予約フォーム】</h1>
-<div class="signup">
-  <p>会員登録がまだの人は<%= link_to "コチラ",signup_path %>をクリック</p>
+<h1>【ログインページ】</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+
+      <p>会員登録がまだの人は<%= link_to "コチラ",signup_path %>をクリック</p>
+  </div>
 </div>

@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get '/help', to: 'top_pages#help'
 
   get '/signup', to: 'users#new'
+
+  resources :users
 end
